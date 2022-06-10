@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B59FCB3285321A9001768AD /* CMPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B59FCB2285321A9001768AD /* CMPickerView.m */; };
 		8B6521C128521A03007D2550 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6521C028521A03007D2550 /* AppDelegate.m */; };
 		8B6521C428521A03007D2550 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6521C328521A03007D2550 /* SceneDelegate.m */; };
 		8B6521C728521A03007D2550 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6521C628521A03007D2550 /* ViewController.m */; };
@@ -17,6 +18,8 @@
 		8B6521DC28521A05007D2550 /* LundarCalendarPickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6521DB28521A05007D2550 /* LundarCalendarPickerTests.m */; };
 		8B6521E628521A05007D2550 /* LundarCalendarPickerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6521E528521A05007D2550 /* LundarCalendarPickerUITests.m */; };
 		8B6521E828521A05007D2550 /* LundarCalendarPickerUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6521E728521A05007D2550 /* LundarCalendarPickerUITestsLaunchTests.m */; };
+		8B6521F828521AC7007D2550 /* CMLundarCalendarDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6521F728521AC7007D2550 /* CMLundarCalendarDB.m */; };
+		8B6521FB28521B2F007D2550 /* CMLundarCalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B6521FA28521B2F007D2550 /* CMLundarCalendarManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B59FCB1285321A9001768AD /* CMPickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMPickerView.h; sourceTree = "<group>"; };
+		8B59FCB2285321A9001768AD /* CMPickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMPickerView.m; sourceTree = "<group>"; };
 		8B6521BC28521A03007D2550 /* LundarCalendarPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LundarCalendarPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6521BF28521A03007D2550 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8B6521C028521A03007D2550 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +59,10 @@
 		8B6521E128521A05007D2550 /* LundarCalendarPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LundarCalendarPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6521E528521A05007D2550 /* LundarCalendarPickerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LundarCalendarPickerUITests.m; sourceTree = "<group>"; };
 		8B6521E728521A05007D2550 /* LundarCalendarPickerUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LundarCalendarPickerUITestsLaunchTests.m; sourceTree = "<group>"; };
+		8B6521F628521AC7007D2550 /* CMLundarCalendarDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMLundarCalendarDB.h; sourceTree = "<group>"; };
+		8B6521F728521AC7007D2550 /* CMLundarCalendarDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMLundarCalendarDB.m; sourceTree = "<group>"; };
+		8B6521F928521B2F007D2550 /* CMLundarCalendarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CMLundarCalendarManager.h; sourceTree = "<group>"; };
+		8B6521FA28521B2F007D2550 /* CMLundarCalendarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CMLundarCalendarManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +113,8 @@
 		8B6521BE28521A03007D2550 /* LundarCalendarPicker */ = {
 			isa = PBXGroup;
 			children = (
+				8B6521F528521A29007D2550 /* PickerView */,
+				8B6521F428521A13007D2550 /* LundarManager */,
 				8B6521BF28521A03007D2550 /* AppDelegate.h */,
 				8B6521C028521A03007D2550 /* AppDelegate.m */,
 				8B6521C228521A03007D2550 /* SceneDelegate.h */,
@@ -134,6 +145,26 @@
 				8B6521E728521A05007D2550 /* LundarCalendarPickerUITestsLaunchTests.m */,
 			);
 			path = LundarCalendarPickerUITests;
+			sourceTree = "<group>";
+		};
+		8B6521F428521A13007D2550 /* LundarManager */ = {
+			isa = PBXGroup;
+			children = (
+				8B6521F628521AC7007D2550 /* CMLundarCalendarDB.h */,
+				8B6521F728521AC7007D2550 /* CMLundarCalendarDB.m */,
+				8B6521F928521B2F007D2550 /* CMLundarCalendarManager.h */,
+				8B6521FA28521B2F007D2550 /* CMLundarCalendarManager.m */,
+			);
+			path = LundarManager;
+			sourceTree = "<group>";
+		};
+		8B6521F528521A29007D2550 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				8B59FCB1285321A9001768AD /* CMPickerView.h */,
+				8B59FCB2285321A9001768AD /* CMPickerView.m */,
+			);
+			path = PickerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +299,11 @@
 			files = (
 				8B6521C728521A03007D2550 /* ViewController.m in Sources */,
 				8B6521C128521A03007D2550 /* AppDelegate.m in Sources */,
+				8B59FCB3285321A9001768AD /* CMPickerView.m in Sources */,
 				8B6521D228521A05007D2550 /* main.m in Sources */,
+				8B6521FB28521B2F007D2550 /* CMLundarCalendarManager.m in Sources */,
 				8B6521C428521A03007D2550 /* SceneDelegate.m in Sources */,
+				8B6521F828521AC7007D2550 /* CMLundarCalendarDB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +409,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
